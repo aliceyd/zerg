@@ -18,6 +18,7 @@ class ExceptionHandler extends Handle{
             $this->msg=$e->msg;
             $this->errorCode=$e->errorCode;
         }else{
+            echo '3242';
             //错误页面展示
             if(config('app_debug')){
                 return parent::render($e);
